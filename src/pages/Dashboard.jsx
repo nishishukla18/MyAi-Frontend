@@ -24,7 +24,7 @@ function Dashboard() {
             <p className="text-gray-600">Total Creations</p>
             <h2 className="text-2xl font-bold">{creations.length}</h2>
           </div>
-          <div className="text-purple-600">
+          <div className="text-primary">
             <Sparkles size={32} />
           </div>
         </div>
@@ -37,7 +37,7 @@ function Dashboard() {
               <Protect plan="premium" fallback="Free">Premium</Protect>
             </h2>
           </div>
-          <div className="text-purple-600">
+          <div className="text-primary">
             <Gem size={32} />
           </div>
         </div>

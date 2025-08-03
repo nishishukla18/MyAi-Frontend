@@ -19,7 +19,7 @@ function Sidebar({ sidebar, setSidebar }) {
   const { signOut, openUserProfile } = useClerk();
 
   return (
-    <div className={`fixed top-0 left-0 h-full w-64 bg-gray-900 text-white p-4 z-50 transform transition-transform duration-300 ${sidebar ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}>
+    <div className={`fixed top-0 left-0 h-full w-64 bg-gray-100 text-secondary p-4 z-50 transform transition-transform duration-300 ${sidebar ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}>
       <div className="flex flex-col items-center space-y-4 mb-6">
         <img src={user?.imageUrl} alt="User" className="w-16 h-16 rounded-full" />
         <h1 className="text-lg font-semibold">{user?.fullName}</h1>
@@ -34,7 +34,7 @@ function Sidebar({ sidebar, setSidebar }) {
             end={to === '/ai'}
             onClick={() => setSidebar(false)}
             className={({ isActive }) =>
-              `flex items-center space-x-2 px-4 py-2 rounded hover:bg-purple-600 ${isActive ? 'bg-purple-700' : ''}`
+              `flex items-center space-x-2 px-4 py-2 rounded hover:bg-primary hover:text-white ${isActive ? 'bg-secondary text-white' : ''}`
             }
           >
             <Icon className="w-5 h-5" />

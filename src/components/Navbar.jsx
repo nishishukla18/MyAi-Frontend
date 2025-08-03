@@ -14,9 +14,9 @@ function Navbar() {
       {/* Logo */}
       <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
         <img
-          src="/logo.png"  // Replace with your actual logo path
+          src="/3.png"  
           alt="logo"
-          className="w-28 sm:w-40"
+          className="w-18 sm"
         />
       </div>
 
@@ -27,7 +27,7 @@ function Navbar() {
         ) : (
           <button
             onClick={openSignIn}
-            className="flex items-center gap-1 bg-purple-950 text-white px-4 py-2 rounded-lg hover:bg-purple-900 transition-all"
+            className="flex items-center gap-1 bg-primary text-white px-4 py-2 rounded-lg hover:secondary transition-all"
           >
             Get Started <ArrowRight className="w-4 h-4" />
           </button>

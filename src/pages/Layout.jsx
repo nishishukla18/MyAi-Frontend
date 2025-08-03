@@ -36,7 +36,7 @@ function Layout() {
           // Unauthenticated View
           <div className="p-4">
             <nav className="bg-white shadow px-4 py-3 flex justify-between items-center">
-              <button onClick={() => navigate('/')} className="text-purple-600 font-semibold">Home</button>
+              <button onClick={() => navigate('/')} className="text-primary font-semibold">Home</button>
               <button
                 onClick={() => openSignIn()}
                 className="bg-#8067b7 text-white px-4 py-1 rounded hover:bg-#8067b7"

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-     <footer className="w-full bg-gradient-to-b from-[#8a43d5] to-[#FFFFFF] text-gray-800">
+     <footer className="w-full bg-gray-200 text-gray-800">
             <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col items-center">
                 <div className="flex items-center space-x-3 mb-6">
                     <h2 className='text-3xl'>My AI</h2>

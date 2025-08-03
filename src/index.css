@@ -4,3 +4,8 @@
 *{
   font-family: 'Outfit', sans-serif;
 }
+@theme{
+  --color-primary: #DD571C;
+  --color-secondary: #020024;
+  
+}

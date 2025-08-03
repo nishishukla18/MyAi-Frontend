@@ -24,7 +24,7 @@ function RemoveBackground() {
       {/* ===== Background Removal Form ===== */}
       <div className="bg-white p-6 rounded-lg ">
         <form onSubmit={onSubmitHandler} className="space-y-6">
-          <div className="flex items-center gap-2 text-purple-600 mb-2">
+          <div className="flex items-center gap-2 text-primary mb-2">
             <Sparkles className="w-5 h-5" />
             <h1 className="text-xl font-semibold">Background Removal</h1>
           </div>
@@ -38,7 +38,7 @@ function RemoveBackground() {
               type="file"
               required
               accept="image/*"
-              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
           <p className="text-sm text-gray-500">Supports JPG, PNG, and other image formats.</p>
@@ -46,7 +46,7 @@ function RemoveBackground() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded "
+            className="flex items-center gap-2 bg-primary hover:bg-secondary text-white px-4 py-2 rounded "
           >
             <Eraser className="w-4 h-4" />
             Remove Background
@@ -56,7 +56,7 @@ function RemoveBackground() {
 
       {/* ===== Processed Image Preview ===== */}
       <div className="mt-10 bg-white p-6 rounded-lg  border border-purple-200">
-        <div className="flex items-center gap-2 mb-4 text-purple-600">
+        <div className="flex items-center gap-2 mb-4 text-primary">
           <Eraser className="w-5 h-5" />
           <h2 className="text-lg font-semibold">Processed Image</h2>
         </div>

@@ -21,7 +21,7 @@ function BlogTitles() {
       {/* ===== Blog Title Generator Form ===== */}
       <div className="bg-white p-6 rounded-lg shadow-md">
         <form onSubmit={onSubmitHandler} className="space-y-6">
-          <div className="flex items-center gap-2 text-purple-600 mb-2">
+          <div className="flex items-center gap-2 text-primary mb-2">
             <Sparkles className="w-5 h-5" />
             <h1 className="text-xl font-semibold">AI Blog Title Generator</h1>
           </div>
@@ -35,7 +35,7 @@ function BlogTitles() {
               placeholder="e.g. Artificial Intelligence, Mindfulness..."
               value={input}
               required
-              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
             />
           </div>
 
@@ -49,8 +49,8 @@ function BlogTitles() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-3 py-1 rounded-full border cursor-pointer transition ${
                     selectedCategory === cat
-                      ? 'bg-purple-600 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-purple-100'
+                      ? 'bg-primary text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-orange-50'
                   }`}
                 >
                   {cat}
@@ -61,7 +61,7 @@ function BlogTitles() {
 
           <button
             type="submit"
-            className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded shadow"
+            className="flex items-center gap-2 bg-primary hover:bg-secondary text-white px-4 py-2 rounded shadow"
           >
             <Edit className="w-4 h-4" />
             Generate Title
@@ -72,7 +72,7 @@ function BlogTitles() {
       {/* ===== Generated Title Section ===== */}
       {generatedTitle && (
         <div className="mt-10 bg-white p-6 rounded-lg shadow-md border border-purple-200">
-          <div className="flex items-center gap-2 mb-4 text-purple-600">
+          <div className="flex items-center gap-2 mb-4 text-primary">
             <Edit className="w-5 h-5" />
             <h2 className="text-lg font-semibold">Generated Blog Title</h2>
           </div>

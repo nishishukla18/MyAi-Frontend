@@ -22,7 +22,7 @@ function GenerateImages() {
       {/* ===== Image Generator Form ===== */}
       <div className="bg-white p-6 rounded-lg shadow-md">
         <form onSubmit={onSubmitHandler} className="space-y-6">
-          <div className="flex items-center gap-2 text-purple-600 mb-4">
+          <div className="flex items-center gap-2 text-primary mb-4">
             <Sparkles className="w-5 h-5" />
             <h1 className="text-xl font-semibold">AI Image Generator</h1>
           </div>
@@ -36,7 +36,7 @@ function GenerateImages() {
               placeholder="Describe what you want to see in the image..."
               value={input}
               required
-              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
             />
           </div>
 
@@ -50,7 +50,7 @@ function GenerateImages() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-3 py-1 rounded-full border cursor-pointer transition ${
                     selectedCategory === cat
-                      ? 'bg-purple-600 text-white'
+                      ? 'bg-primary text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-purple-100'
                   }`}
                 >
@@ -70,7 +70,7 @@ function GenerateImages() {
                   onChange={(e) => setPublish(e.target.checked)}
                   className="sr-only"
                 />
-                <div className={`w-10 h-5 rounded-full transition-colors duration-300 ${publish ? 'bg-purple-600' : 'bg-gray-300'}`}></div>
+                <div className={`w-10 h-5 rounded-full transition-colors duration-300 ${publish ? 'bg-secondary' : 'bg-gray-300'}`}></div>
                 <div
                   className={`absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transform transition-transform duration-300 ${
                     publish ? 'translate-x-5' : ''
@@ -84,7 +84,7 @@ function GenerateImages() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded shadow"
+            className="flex items-center gap-2 bg-primary hover:bg-secondary text-white px-4 py-2 cursor-pointer rounded shadow"
           >
             <ImagePlus className="w-4 h-4" />
             Generate Image
@@ -95,7 +95,7 @@ function GenerateImages() {
       {/* ===== Generated Image Section ===== */}
       {generatedImage && (
         <div className="mt-10 bg-white p-6 rounded-lg shadow-md border border-purple-200">
-          <div className="flex items-center gap-2 mb-4 text-purple-600">
+          <div className="flex items-center gap-2 mb-4 text-secondary">
             <ImagePlus className="w-5 h-5" />
             <h2 className="text-lg font-semibold">Generated Image</h2>
           </div>

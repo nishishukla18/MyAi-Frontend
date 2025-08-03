@@ -11,14 +11,16 @@ import Community from './pages/Community.jsx'
 import ReviewResume from './pages/ReviewResume.jsx'
 import RemoveObject from './pages/RemoveObject.jsx'
 import { useAuth } from '@clerk/clerk-react'
+import {Toaster} from 'react-hot-toast'
 
 function App() {
-  const {getToken} = useAuth()
-  useEffect(()=>{
-    getToken().then((token)=>console.log(token))
-  },[])
+  // const {getToken} = useAuth()
+  // useEffect(()=>{
+  //   getToken().then((token)=>console.log(token))
+  // },[])
   return (
     <div>
+      <Toaster position='top-center' reverseOrder={false} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ai" element={<Layout />}>
