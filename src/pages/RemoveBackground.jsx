@@ -1,5 +1,7 @@
 import { Eraser, Sparkles } from 'lucide-react';
 import React, { useState } from 'react';
+import axios from 'axios';
+
 
 function RemoveBackground() {
   const [input, setInput] = useState(null);
@@ -10,11 +12,6 @@ function RemoveBackground() {
 
     if (!input) return;
 
-    // Placeholder for actual image processing logic
-    // Example: You can use an API call here to send the image and get a processed version
-    console.log('Image submitted:', input);
-
-    // Fake result for preview purposes
     const fakeImageUrl = URL.createObjectURL(input);
     setProcessedImage(fakeImageUrl);
   };
