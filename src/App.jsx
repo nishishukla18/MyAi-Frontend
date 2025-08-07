@@ -9,7 +9,6 @@ import GenerateImages from './pages/GenerateImages.jsx'
 import RemoveBackground from './pages/RemoveBackground.jsx'
 import Community from './pages/Community.jsx'
 import ReviewResume from './pages/ReviewResume.jsx'
-import RemoveObject from './pages/RemoveObject.jsx'
 import { useAuth } from '@clerk/clerk-react'
 import {Toaster} from 'react-hot-toast'
 
@@ -29,17 +28,9 @@ function App() {
         <Route path="blog-titles" element={<BlogTitles />} />
         <Route path="generate-images" element={<  GenerateImages />} />
         <Route path="remove-background" element={<RemoveBackground />} />
-        <Route path="remove-object" element={<RemoveObject />} />
         <Route path="community" element={<Community />} />
         <Route path="review-resume" element={<ReviewResume />} />
         </Route>
-
-        {/* <Route path="/community" element={<Community />} />
-        
-        <Route path="/dashboard" element={<Dashboard />} />
-        
-        <Route path="/review-resume" element={<ReviewResume />} />
-        <Route path="/remove-object" element={<RemoveObject />} />   */}
       </Routes>
     </div>
   )

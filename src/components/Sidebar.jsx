@@ -1,7 +1,7 @@
 import React from 'react';
 import { useUser, useClerk } from '@clerk/clerk-react';
 import { NavLink } from 'react-router-dom';
-import { House, Pen, Hash, Image, Search, Eraser, FileText, Users } from 'lucide-react';
+import { House, Pen, Hash, Image, Search,FileText, Users } from 'lucide-react';
 
 const navItems = [
   { to: '/ai', label: 'Dashboard', Icon: House },
@@ -9,7 +9,6 @@ const navItems = [
   { to: '/ai/blog-titles', label: 'Blog Titles', Icon: Hash },
   { to: '/ai/generate-images', label: 'Generate Images', Icon: Image },
   { to: '/ai/remove-background', label: 'Remove Background', Icon: Search },
-  { to: '/ai/remove-object', label: 'Remove Object', Icon: Eraser },
   { to: '/ai/review-resume', label: 'Review Resume', Icon: FileText },
   { to: '/ai/community', label: 'Community', Icon: Users },
 ];

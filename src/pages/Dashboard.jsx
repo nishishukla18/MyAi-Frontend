@@ -1,14 +1,31 @@
 import { Sparkles, Gem } from 'lucide-react';
 import React from 'react';
-import { Protect } from '@clerk/clerk-react';
+import { Protect, useAuth } from '@clerk/clerk-react';
 import CreationItems from '../components/CreationItems';
 import dummyCreationData from '../data/DummyCreationData';
+import axios from 'axios';
+import toast from 'react-hot-toast';
+
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 
 function Dashboard() {
   const [creations, setCreations] = React.useState([]);
+  const [Loading, setLoading] = React.useState(true);
+  const {getToken} = useAuth();
 
   const getDashboardData = async () => {
-    setCreations(dummyCreationData);
+    try {
+      const {data} = await axios.get('/api/user/get-user-creations',{headers: {
+        Authorization: `Bearer ${await getToken()}`
+      }});
+      if (data.success) {
+        setCreations(data.creations);
+      } else {
+        toast.error(data.message || 'Failed to fetch creations');
+      }
+    } catch (error) {
+      toast.error(data.message || 'Failed to fetch creations');
+    }
   };
 
   React.useEffect(() => {

@@ -3,7 +3,7 @@ import { Quote, Star } from "lucide-react";
 export default function Testimonial() {
     return (
         <div className="text-center bg-gray-50 ">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800">What Our Students Say</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800">What Our users Say</h1>
             <p className="text-sm md:text-base text-gray-500 mt-4">Join thousands of successful students who transformed their careers with us</p>
             <div className="flex flex-wrap justify-center gap-5 mt-16 text-left">
                 <div className="w-80 flex flex-col items-start border border-gray-200 p-5 rounded-lg bg-white">
