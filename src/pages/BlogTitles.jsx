@@ -113,14 +113,7 @@ function BlogTitles() {
               {loading ? 'Generating...' : 'Generate Title'}
             </button>
 
-            <button
-              type="button"
-              onClick={testWithSampleTitle}
-              className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded shadow"
-            >
-              <Lightbulb className="w-4 h-4" />
-              Test Sample Title
-            </button>
+            
           </div>
         </form>
 

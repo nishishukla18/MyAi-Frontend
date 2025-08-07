@@ -273,7 +273,6 @@ function GenerateImages() {
               className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
             />
             <div className="text-sm text-gray-500 mt-1">
-              <div>Examples: "A serene mountain landscape at sunset", "A futuristic city skyline with flying cars"</div>
               <div className="mt-1">Characters: {input.length}/500</div>
             </div>
           </div>
